@@ -1,0 +1,13 @@
+# Ignores unnecessary files and files which are generated on the fly when
+# building
+
+Doxyfile
+conf.py
+index.rst
+build
+html
+latex
+Makefile
+make.bat
+node_modules
+Documents/FileDocumentation.rst
