@@ -64,5 +64,5 @@ if (CMAKE_CUDA_COMPILER AND BUILD_CUDA)
     INTERFACE functions_cuda
     # TODO: Combine more libraries that you create
   )
-  target_link_libraries(functions_cuda INTERFACE common_options)
+  target_link_libraries(libraries_cuda INTERFACE common_options)
 endif()
