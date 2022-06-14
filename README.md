@@ -12,6 +12,6 @@ This section is meant for the actual README. Put things that the users of the re
 
 ## For Developers
 
-The documentation for developing this code base lies in the github pages: <https://cowkeyman.github.io/CPP_github_workflow/>. The pages are built using the documentation of the repository itself using gitgub actions.
+The documentation for developing this code base lies in the github pages: <https://cowkeyman.github.io/CPP_github_workflow/>. The pages are built using the documentation of the repository itself using github actions.
 
 If you wish to request a change or addition to this repository, create a github issue or make a pull request.
