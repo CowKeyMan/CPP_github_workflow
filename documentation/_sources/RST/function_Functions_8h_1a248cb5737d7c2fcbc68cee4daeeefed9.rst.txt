@@ -1,0 +1,14 @@
+.. _exhale_function_Functions_8h_1a248cb5737d7c2fcbc68cee4daeeefed9:
+
+Function functions::add
+=======================
+
+- Defined in :ref:`file__home_runner_work_CPP_github_workflow_CPP_github_workflow_src_Functions_Functions.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: functions::add(int, int)
+   :project: CPP_github_workflow
