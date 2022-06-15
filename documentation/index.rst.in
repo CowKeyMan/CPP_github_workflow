@@ -1,6 +1,8 @@
 Welcome to @CMAKE_PROJECT_NAME@'s documentation!
 ====================================================================
 
+If you wish to simply know how the codebase works, then the :ref:`Project Documentation` or the src should be enough for you. If you wish to know what external tools and how to work with the codebase, then the :ref:`Workflow Documentation` will be useful for you.
+
 .. toctree::
    :maxdepth: 1
    :caption: Contents:

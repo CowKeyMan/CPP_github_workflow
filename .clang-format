@@ -2,7 +2,7 @@
 Language: Cpp
 IndentWidth: 2
 
-AlignAfterOpenBracket: false
+AlignAfterOpenBracket: BlockIndent
 AlignConsecutiveAssignments: false
 AlignConsecutiveDeclarations: false
 AlignEscapedNewlines: Left

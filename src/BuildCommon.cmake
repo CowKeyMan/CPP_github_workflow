@@ -35,10 +35,10 @@ if (BUILD_CPU)
   add_library(libraries_cpu INTERFACE)
   target_link_libraries(
     libraries_cpu
+    INTERFACE common_options
     INTERFACE functions_cpu
     # TODO: Combine more libraries that you create
   )
-  target_link_libraries(libraries_cpu INTERFACE common_options)
 endif()
 
 # Build CUDA Libraries
@@ -61,8 +61,8 @@ if (CMAKE_CUDA_COMPILER AND BUILD_CUDA)
   add_library(libraries_cuda INTERFACE)
   target_link_libraries(
     libraries_cuda
+    INTERFACE common_options
     INTERFACE functions_cuda
     # TODO: Combine more libraries that you create
   )
-  target_link_libraries(libraries_cuda INTERFACE common_options)
 endif()
