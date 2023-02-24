@@ -1,0 +1,14 @@
+.. _exhale_function_Functions_8h_1a64ba7ceb7764b6747d5e9680786b48f3:
+
+Function functions::mul
+=======================
+
+- Defined in :ref:`file__home_runner_work_CPP_github_workflow_CPP_github_workflow_src_Functions_Functions.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: functions::mul(int, int)
+   :project: CPP_github_workflow

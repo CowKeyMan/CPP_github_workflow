@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directory src &mdash; CPP_github_workflow  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+        <script src="../_static/dark_mode_js/default_light.js"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CPP_github_workflow
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Documents/WorkflowDocumentation/WorkflowDocumentation.html">Workflow Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Documents/WorkflowDocumentation/GettingsStarted.html">Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/GettingsStarted.html#setup">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/GettingsStarted.html#typical-workflow">Typical workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/GettingsStarted.html#working-with-cmake">Working with CMake</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/GettingsStarted.html#cmake-options">CMake Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html">Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#git-hooks">Git Hooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#cmake">CMake</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#doxygen">Doxygen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#id1">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#sphinx">Sphinx</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#id2">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#mermaid">Mermaid</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#id3">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#clang-tidy">clang-tidy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#id4">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#clang-format">clang-format</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#id5">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#googletest">googletest</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#id6">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#lcov">lcov</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#id7">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#github-pages">Github pages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#python-static-analysers">Python Static Analysers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Tools.html#id8">Installation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Documents/WorkflowDocumentation/Practices.html">Practices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Practices.html#trailing-return-type">Trailing return type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Practices.html#naming-conventions">Naming Conventions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Practices.html#file-naming-convention">File naming convention</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Practices.html#function-and-variable-names">Function and variable names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Documents/WorkflowDocumentation/Practices.html#namespaces">Namespaces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Practices.html#header-guards">Header Guards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Practices.html#in-code-comments">In-code comments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Documents/WorkflowDocumentation/Practices.html#testing">Testing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Documents/ProjectDocumentation/ProjectDocumentation.html">Project Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Documents/ProjectDocumentation/HighLevelOverview.html">High Level Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Documents/FileDocumentation.html">File Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">src</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#full-api">Full API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_functions.html">Namespace functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modules.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="function_Functions_8h_1a248cb5737d7c2fcbc68cee4daeeefed9.html">Function functions::add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_Functions_8h_1a64ba7ceb7764b6747d5e9680786b48f3.html">Function functions::mul</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CPP_github_workflow</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Directory src</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/RST/dir__home_runner_work_CPP_github_workflow_CPP_github_workflow_src.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="directory-src">
+<span id="dir-home-runner-work-cpp-github-workflow-cpp-github-workflow-src"></span><h1>Directory src<a class="headerlink" href="#directory-src" title="Permalink to this headline"></a></h1>
+<p><em>Directory path:</em> <code class="docutils literal notranslate"><span class="pre">/home/runner/work/CPP_github_workflow/CPP_github_workflow/src</span></code></p>
+<section id="subdirectories">
+<h2>Subdirectories<a class="headerlink" href="#subdirectories" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="dir__home_runner_work_CPP_github_workflow_CPP_github_workflow_src_Functions.html#dir-home-runner-work-cpp-github-workflow-cpp-github-workflow-src-functions"><span class="std std-ref">Directory Functions</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Daniel Cauchi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

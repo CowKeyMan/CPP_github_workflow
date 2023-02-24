@@ -1,0 +1,23 @@
+
+.. _program_listing_file__home_runner_work_CPP_github_workflow_CPP_github_workflow_src_Functions_Functions.h:
+
+Program Listing for File Functions.h
+====================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file__home_runner_work_CPP_github_workflow_CPP_github_workflow_src_Functions_Functions.h>` (``/home/runner/work/CPP_github_workflow/CPP_github_workflow/src/Functions/Functions.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef FUNCTIONS_H
+   #define FUNCTIONS_H
+   
+   namespace functions {
+   
+   auto add(int a, int b) -> int;
+   auto mul(int a, int b) -> int;
+   
+   }  // namespace functions
+   
+   #endif

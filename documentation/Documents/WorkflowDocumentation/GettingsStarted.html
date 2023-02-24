@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started &mdash; CPP_github_workflow  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/plot_directive.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/dark_mode_css/general.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/dark_mode_css/dark.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+        <script src="../../_static/dark_mode_js/default_light.js"></script>
+        <script src="../../_static/dark_mode_js/theme_switcher.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tools" href="Tools.html" />
+    <link rel="prev" title="Workflow Documentation" href="WorkflowDocumentation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            CPP_github_workflow
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="WorkflowDocumentation.html">Workflow Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setup">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#typical-workflow">Typical workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#working-with-cmake">Working with CMake</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cmake-options">CMake Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Tools.html">Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#git-hooks">Git Hooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#cmake">CMake</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tools.html#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#doxygen">Doxygen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tools.html#id1">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#sphinx">Sphinx</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tools.html#id2">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#mermaid">Mermaid</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tools.html#id3">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#clang-tidy">clang-tidy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tools.html#id4">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#clang-format">clang-format</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tools.html#id5">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#googletest">googletest</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tools.html#id6">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#lcov">lcov</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tools.html#id7">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#github-pages">Github pages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tools.html#python-static-analysers">Python Static Analysers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tools.html#id8">Installation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Practices.html">Practices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Practices.html#trailing-return-type">Trailing return type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Practices.html#naming-conventions">Naming Conventions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Practices.html#file-naming-convention">File naming convention</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Practices.html#function-and-variable-names">Function and variable names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Practices.html#namespaces">Namespaces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Practices.html#header-guards">Header Guards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Practices.html#in-code-comments">In-code comments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Practices.html#testing">Testing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ProjectDocumentation/ProjectDocumentation.html">Project Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ProjectDocumentation/HighLevelOverview.html">High Level Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../FileDocumentation.html">File Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../RST/modules.html">src</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../RST/modules.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../RST/modules.html#full-api">Full API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../RST/modules.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../RST/namespace_functions.html">Namespace functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../RST/modules.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../RST/function_Functions_8h_1a248cb5737d7c2fcbc68cee4daeeefed9.html">Function functions::add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../RST/function_Functions_8h_1a64ba7ceb7764b6747d5e9680786b48f3.html">Function functions::mul</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CPP_github_workflow</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="WorkflowDocumentation.html">Workflow Documentation</a></li>
+      <li class="breadcrumb-item active">Getting Started</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Documents/WorkflowDocumentation/GettingsStarted.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline"></a></h1>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline"></a></h2>
+<p>For setting up, it is recommended to first read the <a class="reference internal" href="Tools.html#tools"><span class="std std-ref">Tools</span></a> page then come back to this page.</p>
+</section>
+<section id="typical-workflow">
+<h2>Typical workflow<a class="headerlink" href="#typical-workflow" title="Permalink to this headline"></a></h2>
+<p>This section will describe a typical workflow from writing a new piece of code, to checking it agianst formats and testing it, to seeing code coverage and documentation for it. To understand what each script does, it is recommended to open them up in a text editor and seeing what they do.</p>
+<ol class="arabic simple">
+<li><p>Write a new header file template</p></li>
+<li><p>Write a new cpp file for it</p></li>
+<li><p>Write a test for it to test that the new functions work</p></li>
+<li><p>Run <cite>./scripts/build/tests.sh</cite> to build the testing executable</p></li>
+<li><p>If clang-tidy or clang-format say that there is some misformatted code or if there are errors in the build, then fix them and run again.</p>
+<ol class="arabic simple">
+<li><p>At this point you may want to consider running <cite>./scripts/standalone/apply_clang_format.py</cite> if you agree with the changes proposed by clang-format</p></li>
+</ol>
+</li>
+<li><p>Run <cite>./scripts/standalone/test.sh</cite> to run the tests and generate the code coverage report which can be found by opening <em>docs/index.html</em> in a browser and choose the <em>Code Coverage</em> option</p></li>
+<li><p>Integrate the new functions into the program and test again</p></li>
+<li><p>Once you have a main executable ready to be run you can run <cite>./scripts/build/debug.sh</cite> to generate a debug build of your code.</p></li>
+<li><p>You can run your code by running <cite>./build/bin/main</cite> + arguments, which is the main executable generated</p></li>
+<li><p>Here you may update the documentation. You can run <cite>./scripts/build/docs.sh</cite>, which will generate the documentation in the docs folder. Similarly with the code coverage, you may open <em>docs/index.html</em> in a browser and this time choose the <em>Documentation</em> option.</p></li>
+<li><p>After you are satisfied and wish to generate a release executable, you may run <cite>./scripts/build/release.sh</cite> and then you may execute it by running <cite>./build/src/main</cite>.</p></li>
+</ol>
+</section>
+<section id="working-with-cmake">
+<h2>Working with CMake<a class="headerlink" href="#working-with-cmake" title="Permalink to this headline"></a></h2>
+<p>This section will describe the cmake configuration of this project and how it all comes together to build the executable. Furthermore I will advise how one needs to add new libraries easily.</p>
+<figure class="align-center" id="id1">
+<span id="cmakehierarchy"></span><object data="../../_images/mermaid-edba1da36162672fc587d613309314a0b16980c8.svg" type="image/svg+xml">
+            <p class="warning">flowchart LR
+  subgraph CMake Hierarcy
+    common_library_1([common_library_1]) --&gt; common_libraries{{common_libraries}}
+    common_library_2([common_library_2]) --&gt; common_libraries
+
+    google_test[/google_test/] --&gt; test_main
+
+    common_libraries --&gt; test_main
+    common_libraries --&gt; main
+  end
+
+  subgraph Notation
+    interface{{Interface}}
+    library([library])
+    executable[executable]
+    ExternalDependency[/External Dependency/]
+  end</p></object>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Hierarchy of CMake Outputs</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>In Figure <a class="reference internal" href="#cmakehierarchy"><span class="std std-numref">Fig. 1</span></a>, you may see the hierarchy of how each file affects the other. A-&gt;B means that A affects B, such that whatever options or whatever we link to A will also be in B. Of course, we try to be as modular as possible as well, so we should not just put every source file into one library and call it a day.</p>
+<p>Our strategy is to combine modules into libraries, shown with ellipses. Then we combine these libraries with interface libraries. The executables then use these interface libraries to link everything together. Now we go through what each of the above represent.</p>
+<ul class="simple">
+<li><p><cite>BuildCommon.cmake</cite></p>
+<ul>
+<li><p><cite>common_libraries</cite>: Interface library which combines modules/implementation files of the application</p></li>
+</ul>
+</li>
+<li><p><cite>BuildMain.cmake</cite>:</p>
+<ul>
+<li><p><cite>main</cite>: A target which builds the main executable</p></li>
+</ul>
+</li>
+<li><p><cite>BuildTests.cmake</cite>:</p>
+<ul>
+<li><p><cite>test_main</cite>: A target which builds the test executable</p></li>
+</ul>
+</li>
+</ul>
+<p>This means that when adding a new module, we will follow the following steps:</p>
+<ol class="arabic simple">
+<li><p>Create the module and write some code for it</p></li>
+<li><p>Go to <cite>BuildCommon.cmake</cite> and create a library for it.</p></li>
+<li><p>Link the library with <cite>common_libraries</cite>.</p></li>
+<li><p>If you also have a test file, add the test source file to the <cite>test_main</cite> executable found in <cite>BuildTests.cmake</cite>.</p></li>
+</ol>
+<p>There may be some special cases apart from the ones mentioned above, in which case you will need to do some research how to get started, however this should cover the most general use case.</p>
+</section>
+<section id="cmake-options">
+<h2>CMake Options<a class="headerlink" href="#cmake-options" title="Permalink to this headline"></a></h2>
+<p>The following section describes the available options I created and what each of them does:</p>
+<ul class="simple">
+<li><p><cite>CMAKE_EXPORT_COMPILE_COMMANDS</cite>: Export <cite>compile_command.json</cite></p></li>
+<li><p><cite>DCMAKE_BUILD_TYPE</cite>: (Options: Debug/Release). Debug mode does not do optimisations</p></li>
+<li><p><cite>DENABLE_HEADER_GUARDS_CHECK</cite>: Run header guards check</p></li>
+<li><p><cite>DENABLE_CLANG_FORMAT_CHECK</cite>: Run clang-format check</p></li>
+<li><p><cite>DBUILD_MAIN</cite>: Build the main target</p></li>
+<li><p><cite>DBUILD_TESTS</cite>: Build the test target</p></li>
+<li><p><cite>DBUILD_DOCS</cite>: Build the documentation</p></li>
+<li><p><cite>DENABLE_PROFILING</cite>: Allow inspection of the program through gprof</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="WorkflowDocumentation.html" class="btn btn-neutral float-left" title="Workflow Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Tools.html" class="btn btn-neutral float-right" title="Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Daniel Cauchi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Documentation &mdash; CPP_github_workflow  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+        <script src="../_static/dark_mode_js/default_light.js"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="src" href="../RST/modules.html" />
+    <link rel="prev" title="High Level Overview" href="ProjectDocumentation/HighLevelOverview.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CPP_github_workflow
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="WorkflowDocumentation/WorkflowDocumentation.html">Workflow Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="WorkflowDocumentation/GettingsStarted.html">Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/GettingsStarted.html#setup">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/GettingsStarted.html#typical-workflow">Typical workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/GettingsStarted.html#working-with-cmake">Working with CMake</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/GettingsStarted.html#cmake-options">CMake Options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="WorkflowDocumentation/Tools.html">Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#git-hooks">Git Hooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#cmake">CMake</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Tools.html#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#doxygen">Doxygen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Tools.html#id1">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#sphinx">Sphinx</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Tools.html#id2">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#mermaid">Mermaid</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Tools.html#id3">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#clang-tidy">clang-tidy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Tools.html#id4">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#clang-format">clang-format</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Tools.html#id5">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#googletest">googletest</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Tools.html#id6">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#lcov">lcov</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Tools.html#id7">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#github-pages">Github pages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Tools.html#python-static-analysers">Python Static Analysers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Tools.html#id8">Installation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="WorkflowDocumentation/Practices.html">Practices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Practices.html#trailing-return-type">Trailing return type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Practices.html#naming-conventions">Naming Conventions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Practices.html#file-naming-convention">File naming convention</a></li>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Practices.html#function-and-variable-names">Function and variable names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="WorkflowDocumentation/Practices.html#namespaces">Namespaces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Practices.html#header-guards">Header Guards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Practices.html#in-code-comments">In-code comments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WorkflowDocumentation/Practices.html#testing">Testing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ProjectDocumentation/ProjectDocumentation.html">Project Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ProjectDocumentation/HighLevelOverview.html">High Level Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">File Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RST/modules.html">src</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../RST/modules.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../RST/modules.html#full-api">Full API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../RST/modules.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../RST/namespace_functions.html">Namespace functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../RST/modules.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../RST/function_Functions_8h_1a248cb5737d7c2fcbc68cee4daeeefed9.html">Function functions::add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../RST/function_Functions_8h_1a64ba7ceb7764b6747d5e9680786b48f3.html">Function functions::mul</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CPP_github_workflow</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">File Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Documents/FileDocumentation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-documentation">
+<h1>File Documentation<a class="headerlink" href="#file-documentation" title="Permalink to this headline"></a></h1>
+<p>This page will go through each file with a docstring and display them here in a structured order. This page is a good reference to keep open while working as a quick glance to see what each file does.</p>
+<ul>
+<li><p><cite>.clang-format</cite>: This is the file used by the clang-format tool, which makes sure that the  code base follows a consistent coding style. For those familiar, it is  similar to python’s flake8. Inside the file we specify how we want our  codebase to look. For detailed explanation of each option, the reader is  referred to the official documentation which also contains a lot of examples  for each option: <a class="reference external" href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a>.  Rather than running clang-format directly, we make use of 2 python scripts:  scripts/cmake_checks/check_clang_format.py and  scripts/standalone/apply_clang_format.py.</p></li>
+<li><p><cite>.clang-tidy</cite>: This is the file used by the clang-tidy tool, which performs static analysis. Inside the file we specify which files to ignore when going through the codebase. Rather than using clang-tidy directly, we make use of a python script: scripts/cmake_checks/clang_tidy.py. Note: clang-tidy may fail the first time we run scripts/build/build_all.sh since the compilation database would not have been built by then. So when we run it afterwards it will be successful.</p></li>
+<li><p><cite>.clangd</cite>: This file indicates to the clang compiler (which is used for linting) certain options. This includes for example ignoring certain flags which are specific to the nvcc compiler</p></li>
+<li><p><cite>.gitignore</cite>:</p></li>
+<li><p><cite>.ycm_extra_conf.py</cite>: This file is used by the YouCompleteMe language server to get the build from the compilation_database_folder (./build in our case)</p></li>
+<li><p><cite>CMakeLists.txt</cite>: This is the root cmake file where the sources lie Different CMake versions have more features.</p></li>
+<li><p><strong>.github</strong>:</p>
+<ul class="simple">
+<li><p><strong>workflows</strong>:</p>
+<ul>
+<li><p><cite>publish-documentation.yml</cite>: This is the file responsible for building the documentation and tests on github using github-actions and then publishing both the documentation and test results + code coverage as a github page. Within the file, each step has a name which describes its purpose.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>cmake</strong>:</p>
+<ul class="simple">
+<li><p><cite>CCache.cmake</cite>: Enables CCache, which prevents rebuilding of files which are already built</p></li>
+<li><p><cite>CompilerWarnings.cmake</cite>: Obtained from: <a class="reference external" href="https://github.com/lefticus/cpp_starter_project/blob/master/cmake/CompilerWarnings.cmake">https://github.com/lefticus/cpp_starter_project/blob/master/cmake/CompilerWarnings.cmake</a> This file creates a function to enable compiler warnings for both MSVC as well as other compilers</p></li>
+<li><p><cite>ExportCompileCommands.cmake</cite>: This results in a compilation database to be exported upon building. This compilation database is a json file containing all the commands used. It can be used by some language servers to retrace the commands issued by cmake to be able to do proper file linking and detect proper header includes, etc</p></li>
+<li><p><cite>Options.cmake</cite>: This enables or disables several CMake options</p></li>
+<li><p><cite>PreventBuildingInCmakeDirectory.cmake</cite>: This file ensures that CMake does not run in a folder where there is an existing CMakeLists.txt, as this is usually not desired. It is better to build in a separate directory as CMake generates a lot of ‘garbage’ files for caching</p></li>
+<li><p><cite>Profiling.cmake</cite>: Adds the flags -pg to gcc so we can profile with gprof</p></li>
+</ul>
+</li>
+<li><p><strong>docs</strong>:</p>
+<ul class="simple">
+<li><p><cite>.gitignore</cite>: Ignore everything except itself and index.html</p></li>
+</ul>
+</li>
+<li><p><strong>documentation</strong>: Any files related to documentation contents will be kept here. Documentation is generated by both doxygen and Sphinx</p>
+<ul class="simple">
+<li><p><cite>.gitignore</cite>: Ignores unnecessary files and files which are generated on the fly when building</p></li>
+<li><p><cite>CMakeLists.txt</cite>: Looks for Doxygen and fails if it cannot find it. If it finds it, it will replace any text within the specified files (usually these files will end with the .in extension) which is surrounded by &#64; by the parameters provided by cmake. For example, if we look at the first line of documentation/index.rst, you will notice that part of the title is surrounded by &#64;. This part will be replaced by the same value as it is within cmake. The output file is the same file but without the .in extension, so that the original file is unmodified. So if the input is a.txt.in, the output will be a.txt. Look at the configure_file cmake command here: <a class="reference external" href="https://cmake.org/cmake/help/latest/command/configure_file.html">https://cmake.org/cmake/help/latest/command/configure_file.html</a>. This CMakeLists.txt is not to be used directly, but rather through the scripts/build/build_docs.sh script.</p></li>
+<li><p><cite>Doxyfile.in</cite>: This file describes the settings to be used by the documentation system doxygen (www.doxygen.org) for a project. Change the settings here as you see fit, however make sure to keep GENERATE_XML to YES, because this output is used by Sphinx’s breathe extension to generate our documentation.</p></li>
+<li><p><cite>conf.py.in</cite>: Configuration file for the Sphinx documentation builder. This is where we specify the theme, the extensions we wish to use and other options for our documentation</p></li>
+<li><p><cite>make.bat</cite>: This is the Windows equivalent of the Makefile for the documentation. It is usually unused.</p></li>
+<li><p><strong>RST</strong>:</p>
+<ul>
+<li><p><cite>.gitignore</cite>: Ignore everything in the folder except for itself and the .doc_string</p></li>
+</ul>
+</li>
+<li><p><strong>static</strong>:</p>
+<ul>
+<li><p><cite>.gitignore</cite>: Ignore everything in the folder except for itself</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>hooks</strong>:</p>
+<ul class="simple">
+<li><p><cite>ascii_and_whitespace.sh</cite>: The default git pre-commit hook to remove trailing whitespaces. It also makes sure that all files are ascii</p></li>
+<li><p><cite>pre-commit</cite>: Used as a pre-commit check for git. Adding or removing commands is extremely easy by changing the ‘hook_commands’ list. If any of the commands fail, then the hook will fail.</p></li>
+</ul>
+</li>
+<li><p><strong>scripts</strong>: This folder contains scripts written in multiple languages which are used to combine multiple commands into a single file. It is advised to only build using these scripts rather than using the individual Tools directly.</p>
+<ul>
+<li><p><strong>build</strong>: Scripts used to build executables and documentation. Within this script, cmake configuration options are set. Change these if you wish to set different options.</p>
+<ul class="simple">
+<li><p><cite>all.sh</cite>: Build the main executable, tests as well as documentation in debug mode. If any argument at all is passed to this script, it will skip the cmake step and just execute the build step only</p></li>
+<li><p><cite>compilation_commands.sh</cite>: Generate the compilation commands database (in build/compile_commands.json)</p></li>
+<li><p><cite>debug.sh</cite>: Build the main executable in debug mode. If any argument at all is passed to this script, it will skip the cmake step and just execute the build step only</p></li>
+<li><p><cite>docs.sh</cite>: Build the main executable in debug mode. If any argument at all is passed to this script, it will skip the cmake step and just execute the build step only</p></li>
+<li><p><cite>release.sh</cite>: Build the main executable. If any argument at all is passed to this script, it will skip the cmake step and just execute the build step only.</p></li>
+<li><p><cite>tests.sh</cite>: Build the main test executable. If any argument at all is passed to this script, it will skip the cmake step and just execute the build step only</p></li>
+</ul>
+</li>
+<li><p><strong>standalone</strong>: Scripts which usualy alter the repository in some manner, either by modifying files or by adding new files</p>
+<ul class="simple">
+<li><p><cite>apply_clang_format.py</cite>: Applies the changes proposed by clang format. Warning: This actually changes the source code. While it would not change the contents, make sure that you agree with the changes (you can check what changes will be applied if you run ./scripts/static_analysers/clang_format.py)</p></li>
+<li><p><cite>apply_iwyu.py</cite>: This file checks for incorrect includes in a file, folder or the entire repository and applies include-what-you-use as well as clang-format to them  THIS IS NOT RECOMMENDED TO USE YET (at least not until iwyu gets out of alpha and is ready for production)</p></li>
+<li><p><cite>generate_file_documentation.py</cite>: Goes through the specified files in the repository, reads the first comment, and generates a documentation page file tree with the directory structure and the comment next to the file. This makes it easier to generate documentation where the user can see all the file descriptions in one documentation page</p></li>
+<li><p><cite>test.sh</cite>: Run the tests as well as generate code coverage. Also generates html so that code coverage can easily be seen in the docs.</p></li>
+<li><p><cite>unix_line_endings.sh</cite>: run twice as sometimes once is not enough Only run on tracked files</p></li>
+</ul>
+</li>
+<li><p><strong>static_analysers</strong>:</p>
+<ul>
+<li><p><cite>clang_format.py</cite>: clang-format is a bit difficult to work with on its own. Its output is not very easy to read. Hence, here we have created a script to make it easier to work with. It creates temporary files so that we see the difference between each file individually, and then we format them as we see fit in stdout, to be easier for the eyes and to see which file is being analysed at the time  This script is executed automatically by cmake when building</p></li>
+<li><p><cite>clang_tidy.py</cite>: clang-tidy needs the files input manually. However, we do not want to put test files in there, as these trigger a chain reaction to add the googltest imported header files as well. Hence we simply glob for all the other .h and .cpp files and put them through the tool  This script is executed automatically by cmake when building</p></li>
+<li><div class="line-block">
+<div class="line"><cite>headers.py</cite>:
+Checks that the header files start with:</div>
+<div class="line"><br /></div>
+<div class="line">#ifndef FILE_NAME_CAPITALIZED_&lt;EXTENSION&gt;</div>
+<div class="line">#define FILE_NAME_CAPITALIZED_&lt;EXTENSION&gt;</div>
+<div class="line"><br /></div>
+<div class="line">/**</div>
+<div class="line-block">
+<div class="line">* &#64;file FileName.&lt;extension&gt;</div>
+<div class="line">* &#64;brief &lt;description goes here and on next line&gt;</div>
+<div class="line"><br /></div>
+</div>
+<div class="line">and ends with:</div>
+<div class="line"><br /></div>
+<div class="line">#endif</div>
+<div class="line"><br /></div>
+<div class="line">The term FILE_NAME_CAPITALIZED_&lt;EXTENSION&gt; would be replaced by the filename. So if we have a file called MyClass.h, it would be MY_CLASS_H The steps are:</div>
+<div class="line-block">
+<div class="line">* Remove the .h</div>
+<div class="line">* Convert from camel case to snake case</div>
+<div class="line">* capitalise everything</div>
+<div class="line">* add a _H at the end</div>
+<div class="line"><br /></div>
+</div>
+<div class="line">If the file is a cuh file, it is the same as above but it will have _CUH at the end</div>
+<div class="line"><br /></div>
+<div class="line">The script also checks that python files start with:</div>
+<div class="line"><br /></div>
+<div class="line">#!/usr/bin/python3</div>
+<div class="line">&lt;new line here&gt;</div>
+<div class="line">&lt;3 ” here, ie a docstring&gt;</div>
+<div class="line"><br /></div>
+<div class="line">And bash files should start with the following:</div>
+<div class="line"><br /></div>
+<div class="line">#!/usr/bin/bash</div>
+<div class="line">&lt;new line here&gt;</div>
+<div class="line"># some comment</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>src</strong>:</p>
+<ul class="simple">
+<li><p><cite>BuildCommon.cmake</cite>: Builds items which are commonly used between the main program and the tests. Usually these are classes, files and options which are used by the main program but are also tested individually</p></li>
+<li><p><cite>BuildMain.cmake</cite>: Builds the main program, linking all the files and header files together</p></li>
+<li><p><cite>BuildTests.cmake</cite>: Builds the testing program. We use googletest as a testing framework</p></li>
+<li><p><cite>CMakeLists.txt</cite>: Builds the main as well as testing programs</p></li>
+<li><p><strong>Functions</strong>:</p>
+<ul>
+<li><p><cite>Functions.h</cite>: Contains some functions</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ProjectDocumentation/HighLevelOverview.html" class="btn btn-neutral float-left" title="High Level Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../RST/modules.html" class="btn btn-neutral float-right" title="src" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Daniel Cauchi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

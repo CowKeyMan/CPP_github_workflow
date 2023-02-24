@@ -1,0 +1,22 @@
+
+.. _namespace_functions:
+
+Namespace functions
+===================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_Functions_8h_1a248cb5737d7c2fcbc68cee4daeeefed9`
+
+- :ref:`exhale_function_Functions_8h_1a64ba7ceb7764b6747d5e9680786b48f3`
